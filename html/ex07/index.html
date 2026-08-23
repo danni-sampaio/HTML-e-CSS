@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imagens</title>
+    <title>Midias em HTML </title>
 </head>
 <body>
+  <h1>Imagens dinâmicas</h1>
+  <p>imagens dinâmicas são imagens que podem ser alteradas durante a execução do programa ideal para cada dispositivo.</p>
+    <picture>
+        <source srcset="imagens/foto-p.png" media="(max-width: 750px)" type="image/png">
+        <source srcset="imagens/foto-m.png" media="(min-width: 1050px)"type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem responsiva">
+    </picture>
+    <h1>Áudio e Vídeo</h1>
+   <audio controls autoplay>
+        <source src="midia/audio.mp3" type="audio/mpeg">
+    </audio>
+    <video controls width="320" height="240">
+        <source src="midia/video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
 
 </body>
 </html>
