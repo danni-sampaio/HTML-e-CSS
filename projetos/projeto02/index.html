@@ -11,24 +11,48 @@
      </header>
      <section>
         <form action="" method="get">
-            <label for="usernome">Nome:</label>
-            <input type="text" name="usernome" id="usernome">
-            <br>
-            <label for="useremail">Email:</label>
-            <input type="email" name="useremail" id="useremail">
-            <br>
-            <label for="birthdate">Data de nascimento:</label>
-            <input type="text" name="birthdate" id="birthdate">
-            <br>
-            <label for="userphone">Telefone:</label>
-            <input type="text" name="userphone" id="userphone">
-            <br>
-            <label for="userage">Idade:</label>
-            <input type="text" name="userage" id="userage">
-            <br>
-            <input type="submit" value="Cadastrar">
+            <fieldset>
+                <legend>dados pessoais</legend>
+                <label for="usernome">Nome:</label>
+                <input type="text" name="usernome" required>
+                <br>
+                <label for="useremail">Email:</label>
+                <input type="email" name="useremail" required>
+                <br>
+                <label for="birthdate">Data de nascimento:</label>
+                <input type="date" name="birthdate">
+                <br>
+                <label for="userphone">Telefone:</label>
+                <input type="tel" name="userphone" pattern="[0-9] {11}"  placeholder="DDD + numero">
+                <br>
+                <label for="userage">Idade:</label>
+                <input type="number" name="userage"min="12" max="100" required>
+                <br>
+                <input type="submit" value="Cadastrar">
+            </fieldset>
         </form>
+        <fieldset>
+            <legend>perfil</legend>
+              <p>Gênero</p>
+              <input type="radio" nome="userGender"
+              value="feminino">
+              <label for="userGender">Feminino</label>
 
+              <input type="radio" nome="userGender"
+              value="masculino">
+              <label for="userGender">Masculino</label>
+
+              <input type="radio" nome="userGender"
+              value="notInformed">
+              <label for="userGender">Prefiro não informar</label>
+        </fieldset>
+        <label>Estado civil:</label>
+        <select nome="maritalStatus">
+            <option value="notInformed">Selecione..</option>
+            <option value="Casado">Casado</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="uniao estavel">União estável</option>
+        </select>
      </section>
 
 
