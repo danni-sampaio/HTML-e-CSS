@@ -12,55 +12,69 @@
      <section>
         <form action="" method="get">
             <fieldset>
-                <legend>dados pessoais</legend>
-                <label for="usernome">Nome:</label>
-                <input type="text" name="usernome" required>
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="usernome" required>
                 <br>
-                <label for="useremail">Email:</label>
-                <input type="email" name="useremail" required>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="useremail" required>
                 <br>
                 <label for="birthdate">Data de nascimento:</label>
-                <input type="date" name="birthdate">
+                <input id="birthdate" type="date" name="birthdate">
                 <br>
-                <label for="userphone">Telefone:</label>
-                <input type="tel" name="userphone" pattern="[0-9] {11}"  placeholder="DDD + numero">
+                <label for="phonenumber">Telefone:</label>
+                <input  id="phonenuber" type="tel" name="userphone" pattern="[0-9] {11}"  placeholder="DDD + numero">
                 <br>
-                <label for="userage">Idade:</label>
-                <input type="number" name="userage"min="12" max="100" required>
-                <br>
-                <input type="submit" value="Cadastrar">
+                <label for="age">Idade:</label>
+                <input id="age" type="number" name="userage"min="12" max="100" required>
             </fieldset>
         </form>
         <fieldset>
-            <legend>perfil</legend>
+            <legend>Perfil</legend>
               <p>Gênero</p>
-              <input type="radio" nome="userGender"
+              <input id="fem" type="radio" nome="userGender"
               value="feminino">
               <label for="userGender">Feminino</label>
 
-              <input type="radio" nome="userGender"
+              <input id="mas" type="radio" nome="userGender"
               value="masculino">
               <label for="userGender">Masculino</label>
 
-              <input type="radio" nome="userGender"
+              <input id="notInformed" type="radio" nome="userGender"
               value="notInformed">
               <label for="userGender">Prefiro não informar</label>
         </fieldset>
         <label>Estado civil:</label>
-        <select nome="maritalStatus">
+        <select id="status" nome="maritalStatus">
             <option value="notInformed">Selecione..</option>
             <option value="Casado">Casado</option>
             <option value="solteiro">Solteiro</option>
             <option value="uniao estavel">União estável</option>
         </select>
 
-        <label for="UserState">Estado</label>
-        <select nome="Userstate">
+        <label for="State">Estado</label>
+        <select id="state" nome="Userstate">
             <option value="Alagoas">Alagoas</option>
             <option value="São paulo">São paulo</option>
             <option value="Mato grosso">Mato grosso</option>
             <option value="Rio de janeiro">Rio de janeiro</option>
         </select>
+        <fieldset>
+            <legend>Redes sociais</legend>
+            <input id="Instagem" type="checkbox" nome="Social" value="Instagram"
+            <label for="Instagram">Instagram</label>
+            <br>
+            <input id="Facebook" type="checkbox" nome="Social" value="Facebook"
+            <label for="Facebook">Instagram</label>
+            <br>
+        </fieldset>
+        
+         <button type="submit">Cadastrar</button>
+
+
+
+
+
      </section>
 
 
