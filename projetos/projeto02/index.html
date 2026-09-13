@@ -31,20 +31,21 @@
         </form>
         <fieldset>
             <legend>Perfil</legend>
-              <p>Gênero</p>
-              <input id="fem" type="radio" nome="userGender"
+              <p>Gênero :</p>
+              <input id="fem" type="radio" name="userGender"
               value="feminino">
-              <label for="userGender">Feminino</label>
+              <label for="fem">Feminino</label>
 
-              <input id="mas" type="radio" nome="userGender"
+              <input id="masc" type="radio" name="userGender"
               value="masculino">
-              <label for="userGender">Masculino</label>
+              <label for="masc">Masculino</label>
 
-              <input id="notInformed" type="radio" nome="userGender"
+              <input id="notInformed" type="radio" name="userGender"
               value="notInformed">
-              <label for="userGender">Prefiro não informar</label>
+              <label for="notInformed">Prefiro não informar</label>
         </fieldset>
         <label>Estado civil:</label>
+        <br>
         <select id="status" nome="maritalStatus">
             <option value="notInformed">Selecione..</option>
             <option value="Casado">Casado</option>
@@ -61,13 +62,32 @@
         </select>
         <fieldset>
             <legend>Redes sociais</legend>
-            <input id="Instagem" type="checkbox" nome="Social" value="Instagram"
+            <input id="Instagem" type="checkbox" nome="Social" value="Instagram">
             <label for="Instagram">Instagram</label>
             <br>
-            <input id="Facebook" type="checkbox" nome="Social" value="Facebook"
+            <input id="Facebook" type="checkbox" nome="Social" value="Facebook">
             <label for="Facebook">Facebook</label>
             <br>
         </fieldset>
+        <fieldset>
+             <legend>Opiniao</legend>
+             <p> O que voce achou da qualidade do nosso serviço?</p>
+
+            <input id="Boa" type="radio" name="Opinion" value="Boa">
+            <label for="Boa">Boa</label>
+            <br>
+            <input id="Otima" type="radio" name="Opinion" value="Otima">
+            <label for="Otima">Otima</label>
+            <br>
+            <input id="Regular" type="radio" name="Opinion" value="Regular">
+            <label for="Regular">Regular</label>
+            <br>
+            <input id="Ruim" type="radio" name="Opinion" value="Ruim">
+            <label for="Ruim">Ruim</label>
+            <br>
+            <lebal for="Comment">Escreva a sua opiniao...</lebal>
+            <textarea id="comment" name="userComment" placeholder="Digite aqui..."></textarea>
+        </fieldset> 
         
          <button type="submit">Cadastrar</button>
 
