@@ -7,7 +7,7 @@ Este repositório reúne meus estudos de HTML5 e CSS3 durante minha transição 
 - Aprender HTML5 e CSS3.
 - Documentar meu aprendizado.
 - Desenvolver projetos práticos.
-- Construir um portfólio para futuras oportunidades em QA.
+- Construir um portfólio.
 
 ## Estrutura
 
