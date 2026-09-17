@@ -3,100 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>culturama</title>
+    <link rel="stylesheet" href="culturama-favico.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header>
+ <main> 
+    <header>
+        <img src="img/logo-culturama.png" alt="culturama" srcset="">
         <h1>Formulario de cadastro</h1>
-     </header>
-     <section>
-        <form action="" method="get">
+        </header>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="usernome" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="useremail" required>
+                    <br>
+                    <label for="birthdate">Data de nascimento:</label>
+                    <input id="birthdate" type="date" name="birthdate">
+                    <br>
+                    <label for="phonenumber">Telefone:</label>
+                    <input  id="phonenuber" type="tel" name="userphone" pattern="[0-9] {11}"  placeholder="DDD + numero">
+                    <br>
+                    <label for="age">Idade:</label>
+                    <input id="age" type="number" name="userage"min="12" max="100" required>
+                </fieldset>
+            </form>
             <fieldset>
-                <legend>Dados pessoais</legend>
-                <label for="nome">Nome:</label>
-                <input id="nome" type="text" name="usernome" required>
-                <br>
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="useremail" required>
-                <br>
-                <label for="birthdate">Data de nascimento:</label>
-                <input id="birthdate" type="date" name="birthdate">
-                <br>
-                <label for="phonenumber">Telefone:</label>
-                <input  id="phonenuber" type="tel" name="userphone" pattern="[0-9] {11}"  placeholder="DDD + numero">
-                <br>
-                <label for="age">Idade:</label>
-                <input id="age" type="number" name="userage"min="12" max="100" required>
+                <legend>Perfil</legend>
+                <p>Gênero :</p>
+                <input id="fem" type="radio" name="userGender"
+                value="feminino">
+                <label for="fem">Feminino</label>
+
+                <input id="masc" type="radio" name="userGender"
+                value="masculino">
+                <label for="masc">Masculino</label>
+
+                <input id="notInformed" type="radio" name="userGender"
+                value="notInformed">
+                <label for="notInformed">Prefiro não informar</label>
             </fieldset>
-        </form>
-        <fieldset>
-            <legend>Perfil</legend>
-              <p>Gênero :</p>
-              <input id="fem" type="radio" name="userGender"
-              value="feminino">
-              <label for="fem">Feminino</label>
-
-              <input id="masc" type="radio" name="userGender"
-              value="masculino">
-              <label for="masc">Masculino</label>
-
-              <input id="notInformed" type="radio" name="userGender"
-              value="notInformed">
-              <label for="notInformed">Prefiro não informar</label>
-        </fieldset>
-        <label>Estado civil:</label>
-        <br>
-        <select id="status" nome="maritalStatus">
-            <option value="notInformed">Selecione..</option>
-            <option value="Casado">Casado</option>
-            <option value="solteiro">Solteiro</option>
-            <option value="uniao estavel">União estável</option>
-        </select>
-
-        <label for="State">Estado</label>
-        <select id="state" nome="Userstate">
-            <option value="Alagoas">Alagoas</option>
-            <option value="São paulo">São paulo</option>
-            <option value="Mato grosso">Mato grosso</option>
-            <option value="Rio de janeiro">Rio de janeiro</option>
-        </select>
-        <fieldset>
-            <legend>Redes sociais</legend>
-            <input id="Instagem" type="checkbox" nome="Social" value="Instagram">
-            <label for="Instagram">Instagram</label>
+            <label>Estado civil:</label>
             <br>
-            <input id="Facebook" type="checkbox" nome="Social" value="Facebook">
-            <label for="Facebook">Facebook</label>
-            <br>
-        </fieldset>
-        <fieldset>
-             <legend>Opiniao</legend>
-             <p> O que voce achou da qualidade do nosso serviço?</p>
+            <select id="status" nome="maritalStatus">
+                <option value="notInformed">Selecione..</option>
+                <option value="Casado">Casado</option>
+                <option value="solteiro">Solteiro</option>
+                <option value="uniao estavel">União estável</option>
+            </select>
 
-            <input id="Boa" type="radio" name="Opinion" value="Boa">
-            <label for="Boa">Boa</label>
-            <br>
-            <input id="Otima" type="radio" name="Opinion" value="Otima">
-            <label for="Otima">Otima</label>
-            <br>
-            <input id="Regular" type="radio" name="Opinion" value="Regular">
-            <label for="Regular">Regular</label>
-            <br>
-            <input id="Ruim" type="radio" name="Opinion" value="Ruim">
-            <label for="Ruim">Ruim</label>
-            <br>
-            <lebal for="Comment">Escreva a sua opiniao...</lebal>
-            <textarea id="comment" name="userComment" placeholder="Digite aqui..."></textarea>
-        </fieldset> 
-        
-         <button type="submit">Cadastrar</button>
+            <label for="State">Estado</label>
+            <select id="state" nome="Userstate">
+                <option value="Alagoas">Alagoas</option>
+                <option value="São paulo">São paulo</option>
+                <option value="Mato grosso">Mato grosso</option>
+                <option value="Rio de janeiro">Rio de janeiro</option>
+            </select>
+            <fieldset>
+                <legend>Redes sociais</legend>
+                <input id="Instagem" type="checkbox" nome="Social" value="Instagram">
+                <label for="Instagram">Instagram</label>
+                <br>
+                <input id="Facebook" type="checkbox" nome="Social" value="Facebook">
+                <label for="Facebook">Facebook</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Opiniao</legend>
+                <p> O que voce achou da qualidade do nosso serviço?</p>
+
+                <input id="Boa" type="radio" name="Opinion" value="Boa">
+                <label for="Boa">Boa</label>
+                <br>
+                <input id="Otima" type="radio" name="Opinion" value="Otima">
+                <label for="Otima">Otima</label>
+                <br>
+                <input id="Regular" type="radio" name="Opinion" value="Regular">
+                <label for="Regular">Regular</label>
+                <br>
+                <input id="Ruim" type="radio" name="Opinion" value="Ruim">
+                <label for="Ruim">Ruim</label>
+                <br>
+                <lebal for="Comment">Escreva a sua opiniao...</lebal>
+                <textarea id="comment" name="userComment" placeholder="Digite aqui..."></textarea>
+            </fieldset> 
+            
+            <button type="submit">Cadastrar</button>
 
 
 
 
 
-     </section>
-
-
+        </section>
+        </main>
 </body>
 </html>
