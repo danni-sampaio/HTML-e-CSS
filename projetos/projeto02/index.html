@@ -36,7 +36,7 @@
                     <label for="age">Idade:</label>
                     <input id="age" type="number" name="userage"min="12" max="100" required>
                 </fieldset>
-            </form>
+        
             <fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero :</p>
@@ -51,24 +51,26 @@
                 <input id="notInformed" type="radio" name="userGender"
                 value="notInformed">
                 <label for="notInformed">Prefiro não informar</label>
-            </fieldset>
-            <label>Estado civil:</label>
-            <br>
-            <select id="status" nome="maritalStatus">
-                <option value="notInformed">Selecione..</option>
-                <option value="Casado">Casado</option>
-                <option value="solteiro">Solteiro</option>
-                <option value="uniao estavel">União estável</option>
-            </select>
+                 <br>
+                <label>Estado civil:</label>
+                <br>
+                <select id="status" nome="maritalStatus">
+                    <option value="notInformed">Selecione..</option>
+                    <option value="Casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="uniao estavel">União estável</option>
+                </select>
+                
+                <label for="State">Estado</label>
+                <select id="state" nome="Userstate">
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="São paulo">São paulo</option>
+                    <option value="Mato grosso">Mato grosso</option>
+                    <option value="Rio de janeiro">Rio de janeiro</option>
+                </select>
+                </fieldset>
 
-            <label for="State">Estado</label>
-            <select id="state" nome="Userstate">
-                <option value="Alagoas">Alagoas</option>
-                <option value="São paulo">São paulo</option>
-                <option value="Mato grosso">Mato grosso</option>
-                <option value="Rio de janeiro">Rio de janeiro</option>
-            </select>
-            <fieldset>
+                <fieldset>
                 <legend>Redes sociais</legend>
                 <input id="Instagem" type="checkbox" nome="Social" value="Instagram">
                 <label for="Instagram">Instagram</label>
@@ -102,7 +104,7 @@
 
 
 
-
+         </form>
         </section>
         </main>
 </body>
