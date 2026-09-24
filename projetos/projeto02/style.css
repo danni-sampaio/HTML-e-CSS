@@ -60,3 +60,16 @@ input[type="radio"],
 input[type="checkbok"]{
     width: auto;
 }
+
+input:invalid,select:invalid,textarea:invalid{
+    border-color: red;
+}
+input:valid,select:valid,textarea:valid{
+    border-color: green;
+}
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+ 
+
