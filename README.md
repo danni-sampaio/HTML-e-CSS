@@ -17,9 +17,7 @@ Este repositório reúne meus estudos de HTML5 e CSS3 durante minha transição 
 - Projetos
 
 📁 css
-- Teoria
-- Exercícios
-- Projetos
+- style
 
 ## Tecnologias
 
@@ -28,4 +26,4 @@ Este repositório reúne meus estudos de HTML5 e CSS3 durante minha transição 
 
 ## Status
 
-🚧 Em desenvolvimento
+🚧 concluído 
